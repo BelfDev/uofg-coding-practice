@@ -1,4 +1,4 @@
-package compsci4039.week1.keyboardinput;
+package compsci4039.week1.keyboard_input;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
