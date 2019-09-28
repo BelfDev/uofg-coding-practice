@@ -29,9 +29,11 @@ public class Lab4Ex2 {
     }
 
     private static boolean isPrime(int number) {
-        if (number < 0) {
+        if (number < 2) {
             return false;
-        } else if (number % 2 == 0 && number != 2) {
+        } else if (number == 2) {
+            return true;
+        } else if (number % 2 == 0) {
             return false;
         }
 
