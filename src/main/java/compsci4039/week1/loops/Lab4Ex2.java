@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class Lab4Ex2 {
 
     public static void main(String[] args) {
-        // calculatePrimeNumbersUntil(61);
-        // calculateOtherPrimeNumbersUntil(61);
-        // executeGuessingGame();
-        // produceTriangle(8);
-        // calculateFit(4.2, 1.6);
-        // padStringValue("Simon", '@', 10);
-        // playPaperScissorsAndStone();
+//        calculatePrimeNumbersUntil(61);
+//        calculateOtherPrimeNumbersUntil(61);
+//        executeGuessingGame();
+//        produceTriangle(8);
+//        calculateFit(4.2, 1.6);
+//        padStringValue("Simon", '@', 10);
+//        playPaperScissorsAndStone();
     }
 
 
@@ -30,8 +30,6 @@ public class Lab4Ex2 {
 
     private static boolean isPrime(int number) {
         if (number < 0) {
-            return false;
-        } else if (number == 1) {
             return false;
         } else if (number % 2 == 0 && number != 2) {
             return false;
@@ -64,15 +62,13 @@ public class Lab4Ex2 {
         int numberOfAttempts = 10;
         int currentAttemptIndex = 0;
 
-        System.out.println(
-                "Hello! Welcome to my awesome guessing game.\nGuess which number I've picked. You can choose between from 0 - 99");
+        System.out.println("Hello! Welcome to my awesome guessing game.\nGuess which number I've picked. You can choose between from 0 - 99");
 
         while (currentAttemptIndex < numberOfAttempts) {
             int input = keyboard.nextInt();
 
             if (input == randomNumber) {
-                System.out.printf("\nWow, you are pretty good. You've guessed the number right: %s",
-                        input);
+                System.out.printf("\nWow, you are pretty good. You've guessed the number right: %s", input);
                 break;
             }
             System.out.println("\nWrong guess... try it again!");
@@ -93,7 +89,7 @@ public class Lab4Ex2 {
                 k++;
             }
             System.out.print(margin);
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j < i; j ++) {
                 System.out.printf("%s ", i);
             }
             System.out.println();
@@ -114,7 +110,7 @@ public class Lab4Ex2 {
         int counter = 1;
         do {
             padding += paddingCharacter;
-        } while (numberOfPaddings > counter++);
+        } while (numberOfPaddings > counter++ );
 
         String result = padding + value;
         System.out.printf("New value: %s", result);
