@@ -3,6 +3,13 @@ package compsci4039.week1.loops;
 import java.util.Random;
 import java.util.Scanner;
 
+/*
+ * Programming IT, Laboratory Exercises
+ * 6 Loops
+ * Parts 3 - 9
+ * https://docs.google.com/document/d/1vnyQKYFAc0_70oGF3a0RgEl1BHRUGm9VwNuHV4iPnA8
+ */
+
 public class Lab4Ex2 {
 
     public static void main(String[] args) {

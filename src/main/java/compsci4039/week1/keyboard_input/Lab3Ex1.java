@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Programming IT, Laboratory Exercises
  * 5 Keyboard input
  * Parts 1 - 6
- * https://docs.google.com/document/d/1vnyQKYFAc0_70oGF3a0RgEl1BHRUGm9VwNuHV4iPnA8/edit
+ * https://docs.google.com/document/d/1vnyQKYFAc0_70oGF3a0RgEl1BHRUGm9VwNuHV4iPnA8
  */
 
 public class Lab3Ex1 {

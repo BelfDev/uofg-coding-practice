@@ -2,6 +2,13 @@ package compsci4039.week1.conditions;
 
 import java.util.Calendar;
 
+/*
+ * Programming IT, Laboratory Exercises
+ * 4 Conditions
+ * Parts 1 - 6
+ * https://docs.google.com/document/d/1vnyQKYFAc0_70oGF3a0RgEl1BHRUGm9VwNuHV4iPnA8
+ */
+
 public class Lab2Ex3 {
 
     public static void main(String args[]) {

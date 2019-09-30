@@ -2,6 +2,13 @@ package compsci4039.week1.string_formatting;
 
 import java.text.DecimalFormat;
 
+/*
+ * Programming IT, Laboratory Exercises
+ * 7 Loops
+ * Parts 1 - 2
+ * https://docs.google.com/document/d/1vnyQKYFAc0_70oGF3a0RgEl1BHRUGm9VwNuHV4iPnA8
+ */
+
 public class Lab5Ex1 {
 
     public static void main(String args[]) {
