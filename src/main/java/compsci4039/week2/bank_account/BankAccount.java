@@ -29,7 +29,11 @@ public class BankAccount {
 
     public double getBalance() {
         return this.balance;
-    };
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
 
     public void printAccountNumber() {
         System.out.printf("\n%s's account number: %d", this.person.getName(), this.accountNumber);
