@@ -16,7 +16,7 @@ public class Lab4Ex1 {
     }
 
     // Part 1
-    private static void calculateTimeTable(int number) {
+    public static void calculateTimeTable(int number) {
         int i = 10;
 
         while(i > 0) {
@@ -27,7 +27,7 @@ public class Lab4Ex1 {
     }
 
     // Part 2
-    private static void calculateTimeTable(int number, int numberOfEntriesToShow) {
+    public static void calculateTimeTable(int number, int numberOfEntriesToShow) {
         int i = 1;
         while(i <= numberOfEntriesToShow) {
             int result = number * i;
@@ -37,7 +37,7 @@ public class Lab4Ex1 {
     }
 
 
-    private static void calculateTimeTable(int number, int numberOfEntriesToShow, boolean printAscending) {
+    public static void calculateTimeTable(int number, int numberOfEntriesToShow, boolean printAscending) {
         int i = 0;
 
         while(i < numberOfEntriesToShow) {
