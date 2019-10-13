@@ -13,19 +13,19 @@ import java.util.Scanner;
 public class Lab4Ex2 {
 
     public static void main(String[] args) {
-//        calculatePrimeNumbersUntil(61);
-//        calculateOtherPrimeNumbersUntil(61);
-//        executeGuessingGame();
-//        produceTriangle(8);
-//        calculateFit(4.2, 1.6);
-//        padStringValue("Simon", '@', 10);
-//        playPaperScissorsAndStone();
+        calculatePrimeNumbersUntil(61);
+        calculateOtherPrimeNumbersUntil(61);
+        executeGuessingGame();
+        produceTriangle(8);
+        calculateFit(4.2, 1.6);
+        padStringValue("Simon", '@', 10);
+        playPaperScissorsAndStone();
     }
 
 
 
     // Part 3
-    private static void calculatePrimeNumbersUntil(int number) {
+    public static void calculatePrimeNumbersUntil(int number) {
         int i = 2;
         while (i <= number) {
             if (isPrime(i)) {
@@ -35,7 +35,7 @@ public class Lab4Ex2 {
         }
     }
 
-    private static boolean isPrime(int number) {
+    public static boolean isPrime(int number) {
         if (number < 2) {
             return false;
         } else if (number == 2) {
@@ -88,7 +88,7 @@ public class Lab4Ex2 {
     }
 
     // Part 6
-    private static void produceTriangle(int numberOfRows) {
+    public static void produceTriangle(int numberOfRows) {
         for (int i = 0; i <= numberOfRows; i++) {
             int numberOfMarginSpaces = numberOfRows - i;
             String margin = "";
@@ -113,7 +113,7 @@ public class Lab4Ex2 {
     }
 
     // Part 8
-    private static void padStringValue(String value, char paddingCharacter, int totalLength) {
+    public static void padStringValue(String value, char paddingCharacter, int totalLength) {
         int numberOfPaddings = totalLength - value.length();
         String padding = "";
         int counter = 1;
