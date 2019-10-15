@@ -84,3 +84,8 @@ lint/tmp/
 # Visual Studio Code workspaces / configs
 *.code-workspace
 .vscode
+
+# Eclipse workspaces / configs
+.classpath
+.project
+.settings
