@@ -42,15 +42,15 @@ public class Lab3Ex1 {
         System.out.println("You are " + userAge + " years old");
     }
 
-    private static double compCircleArea(double radius) {
+    public static double compCircleArea(double radius) {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    private static double compCircleCircumference(double radius) {
+    public static double compCircleCircumference(double radius) {
         return 2 * Math.PI * radius;
     }
 
-    private static void summariseCircle(double radius) {
+    public static void summariseCircle(double radius) {
         double area = compCircleArea(radius);
         double circumference = compCircleCircumference(radius);
         System.out.println("The circle area is " + area + " and its circumference is " + circumference);
@@ -91,7 +91,7 @@ public class Lab3Ex1 {
         }
     }
 
-    private static void calculateWholeYears(int day, int month, int year) {
+    public static void calculateWholeYears(int day, int month, int year) {
         Calendar calendar = Calendar.getInstance();
         int currentDay = calendar.get(Calendar.DATE);
         int currentMonth = calendar.get(Calendar.MONTH) + 1;

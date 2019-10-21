@@ -16,7 +16,7 @@ public class Lab5Ex1 {
     }
 
     // Part 1 & 2
-    private static void calculateTimeTable(double number, int numberOfEntriesToShow) {
+    public static void calculateTimeTable(double number, int numberOfEntriesToShow) {
         if (number < 0 || number > 99) {
             return;
         }
