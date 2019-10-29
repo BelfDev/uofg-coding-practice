@@ -1,6 +1,5 @@
-package compsci4039.week1.keyboard_input.week3.multi_dimensional_arrays;
+package compsci4039.week3.multi_dimensional_arrays;
 
-import compsci4039.week3.multi_dimensional_arrays.Lab7Ex2;
 import org.junit.Assert;
 import org.junit.Test;
 

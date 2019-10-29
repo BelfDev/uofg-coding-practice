@@ -1,8 +1,8 @@
-package compsci4039.week1.keyboard_input.week3.arrays_of_objects;
+package compsci4039.week3.arrays_of_objects;
 
 import compsci4039.week2.people.Gender;
 import compsci4039.week2.people.Person;
-import compsci4039.week3.arrays_of_objects.Lab7Ex3;
+
 import org.junit.Assert;
 import org.junit.Test;
 

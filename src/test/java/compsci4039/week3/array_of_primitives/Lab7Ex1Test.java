@@ -1,6 +1,5 @@
-package compsci4039.week1.keyboard_input.week3.array_of_primitives;
+package compsci4039.week3.array_of_primitives;
 
-import compsci4039.week3.array_of_primitives.Lab7Ex1;
 import org.junit.Assert;
 import org.junit.Test;
 
