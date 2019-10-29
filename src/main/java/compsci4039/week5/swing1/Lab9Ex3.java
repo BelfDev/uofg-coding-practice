@@ -7,30 +7,32 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-/*
- * Programming IT, Laboratory Exercises
- * Java Swing 1
- * Part 2
- * https://docs.google.com/document/d/1ydXgjYnBbTwr8rmIJviaZX7-R43aifLVCzuPf3GJdaU
- */
-public class Lab9Ex2 extends JFrame {
+public class Lab9Ex3 extends JFrame {
 
-    public Lab9Ex2() {
+    public Lab9Ex3() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 400);
         setLocation(100, 100);
         setTitle("Border layout for JFrame");
     }
 
-    // Part 2
+    // Part 3
     public static void main(String[] args) {
-        Lab9Ex2 frame = new Lab9Ex2();
+        Lab9Ex3 frame = new Lab9Ex3();
+        populateFrame(frame);
+        frame.setVisible(true);
+    }
 
+    private static void populateFrame(JFrame frame) {
         JPanel topPanel = new JPanel();
         JPanel rightPanel = new JPanel();
         JPanel bottomPanel = new JPanel();
         JPanel leftPanel = new JPanel();
         JPanel centerPanel = new JPanel();
+
+        leftPanel.setLayout(new GridBagLayout());
+        centerPanel.setLayout(new GridBagLayout());
+        rightPanel.setLayout(new GridBagLayout());
 
         JLabel northLabel = new JLabel(BorderLayout.NORTH);
         JLabel westLabel = new JLabel(BorderLayout.WEST);
@@ -49,8 +51,6 @@ public class Lab9Ex2 extends JFrame {
         frame.add(bottomPanel, BorderLayout.SOUTH);
         frame.add(leftPanel, BorderLayout.WEST);
         frame.add(centerPanel, BorderLayout.CENTER);
-
-        frame.setVisible(true);
     }
 
 }
