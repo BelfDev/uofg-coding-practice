@@ -1,4 +1,4 @@
-package compsci4039.week5.swing1;
+package compsci4039.week5.swing;
 
 import javax.swing.JFrame;
 

@@ -1,23 +1,27 @@
-package compsci4039.week5.swing1;
+package compsci4039.week5.swing;
 
 import java.awt.BorderLayout;
+import java.awt.Font;
 import java.awt.GridBagLayout;
 
 import javax.swing.JLabel;
 
-public class Lab9Ex6 extends Lab9Ex5 {
+public class Lab9Ex5 extends Lab9Ex4 {
 
-    public Lab9Ex6() {
+    public static Font font;
+
+    public Lab9Ex5() {
         super();
+        this.font = new Font("Time Roman", Font.PLAIN, 24);
     }
 
     public static void main(String[] args) {
-        Lab9Ex6 frame = new Lab9Ex6();
+        Lab9Ex5 frame = new Lab9Ex5();
         frame.populateFrame();
         frame.setVisible(true);
     }
 
-    // Part 6
+    // Part 5
     private void populateFrame() {
 
         // Panel border setup
@@ -34,8 +38,8 @@ public class Lab9Ex6 extends Lab9Ex5 {
 
         // Label creation
         JLabel northLabel = new JLabel(BorderLayout.NORTH);
-        JLabel westLabel = new JLabel("<html> &nbsp W &nbsp <br> &nbsp E " + "&nbsp <br>&nbsp S &nbsp<br> &nbsp T &nbsp </html>");
-        JLabel eastLabel = new JLabel("<html> &nbsp E &nbsp <br> &nbsp A " + "&nbsp <br>&nbsp S &nbsp<br> &nbsp T &nbsp </html>");
+        JLabel westLabel = new JLabel(BorderLayout.WEST);
+        JLabel eastLabel = new JLabel(BorderLayout.EAST);
         JLabel southLabel = new JLabel(BorderLayout.SOUTH);
         JLabel centerLabel = new JLabel(BorderLayout.CENTER);
 
@@ -60,4 +64,5 @@ public class Lab9Ex6 extends Lab9Ex5 {
         this.add(leftPanel, BorderLayout.WEST);
         this.add(centerPanel, BorderLayout.CENTER);
     }
+
 }

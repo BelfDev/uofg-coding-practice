@@ -1,27 +1,47 @@
-package compsci4039.week5.swing1;
+package compsci4039.week5.swing;
 
 import java.awt.BorderLayout;
-import java.awt.Font;
+import java.awt.Color;
 import java.awt.GridBagLayout;
 
+import javax.swing.BorderFactory;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.Border;
 
-public class Lab9Ex5 extends Lab9Ex4 {
+public class Lab9Ex4 extends JFrame {
 
-    public static Font font;
+    public JPanel topPanel;
+    public JPanel rightPanel;
+    public JPanel bottomPanel;
+    public JPanel leftPanel;
+    public JPanel centerPanel;
 
-    public Lab9Ex5() {
-        super();
-        this.font = new Font("Time Roman", Font.PLAIN, 24);
+    public Border blackLine;
+
+    public Lab9Ex4() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400, 400);
+        setLocation(100, 100);
+        setTitle("Border layout for JFrame");
+
+        this.topPanel = new JPanel();
+        this.rightPanel = new JPanel();
+        this.bottomPanel = new JPanel();
+        this.leftPanel = new JPanel();
+        this.centerPanel = new JPanel();
+
+        this.blackLine = BorderFactory.createLineBorder(Color.black);
     }
 
     public static void main(String[] args) {
-        Lab9Ex5 frame = new Lab9Ex5();
+        Lab9Ex4 frame = new Lab9Ex4();
         frame.populateFrame();
         frame.setVisible(true);
     }
 
-    // Part 5
+    // Part 4
     private void populateFrame() {
 
         // Panel border setup
@@ -42,13 +62,6 @@ public class Lab9Ex5 extends Lab9Ex4 {
         JLabel eastLabel = new JLabel(BorderLayout.EAST);
         JLabel southLabel = new JLabel(BorderLayout.SOUTH);
         JLabel centerLabel = new JLabel(BorderLayout.CENTER);
-
-        // Label font setup
-        northLabel.setFont(font);
-        westLabel.setFont(font);
-        eastLabel.setFont(font);
-        southLabel.setFont(font);
-        centerLabel.setFont(font);
 
         // Label addition
         topPanel.add(northLabel);

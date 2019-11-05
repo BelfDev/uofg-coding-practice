@@ -1,4 +1,4 @@
-package compsci4039.week5.swing1;
+package compsci4039.week5.swing;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
