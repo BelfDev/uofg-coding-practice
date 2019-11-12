@@ -1,6 +1,7 @@
 package compsci4039.week8.part1;
 
 import java.awt.BorderLayout;
+import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -25,6 +26,10 @@ public class FortunePanel extends JPanel {
 
     public void updateText(String s) {
         label.setText(s);
+    }
+
+    public void setButtonListener(ActionListener listener) {
+        button1.addActionListener(listener);
     }
 
 }
